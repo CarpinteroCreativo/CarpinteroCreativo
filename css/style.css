@@ -1,227 +1,80 @@
 *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 body{
-    font-family: 'Open Sans', sans-serif;
-    /* text-align: center; */
-    background-image: url(../img/acercade.png);
+    font-family: 'Roboto', sans-serif;
 }
-header{
-
-    background-color: rgba(70,72,84,.8);
+/*cabesera*/
+div.contenedor{
+width: 100%;
 }
-header .hijo{
-    width:95%;
-    height: 61px;
+div.contenedor header{
+    width: 100%;
+    height: 60px;
     margin: auto;
-    text-align: right;
-    font-size: 30px;
-    color: #fff;
+    background: #000;
+}
+
+div.contenedor header nav{
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    padding: 17px 0;
+}
+div.contenedor header nav h1 a{
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+div.contenedor header nav div a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+div.contenedor main{
+    display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
 }
-
-header .hijo .logo{
-    display: inline-block;
-    width: 80px;
-    height: 61px;
+div.contenedor main div.videos-y{
+    width:45%;
+    margin: 20px;
 }
-header .hijo .logo img{
-    width: 100%;
-    padding: 10px 0 10px 0;
-}
-header .hijo .menu {
-    display: inline-block;
-    padding: 10px 0 10px 0;
+div.contenedor main div.videos-y iframe.cont{
+    width:100%;
+    border: 10px solid #fff;
+    border-radius: 25px;
 }
 
-/* main */
-/* slider */
-div.slider{
-    position: relative;
-}
-div.slider div.diapositiva{
-    width: 100%;
-    height: 428px;
-}
-div.slider div.diapositiva img{
-    width: 100%;
-}
-div.texto{
-    position: absolute;
-    top: 20px;
-    color: #fff;
-    text-align: center;
-    padding: 0 83px 0 83px;
-    font-size: 18px;
-}
-
-/*slogan*/
-div.enlace{
-    background-color: rgba(70,72,84,1);
-    width: 100%;
-    height: 236px;
-}
-
-div.enlace div.slogan{
-    width: 95%;
-    height: 236px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-div.enlace div.slogan img{
-    width: 33.33%;
-    margin: auto;
-    margin-bottom: 20px;
-
-}
-div.enlace div.slogan p{
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 10px;
-
-
-}
-div.enlace div.slogan a{
-    display: inline-block;
-    width: 33%;
-    background-color: #ff4c4c;
+div.susc{
+    margin-top: 30px;
+    width: 135px;
+    background-color: #c00;
+    margin:2em auto;
     padding: 10px;
-    margin: auto;
-    /* margin-bottom: 20px; */
-    color:#fff;
-    text-align: center;
-    border-radius: 3px;
+    font-size: 1.4em;
+    font-weight: 500;
 }
-/*acerca de mi*/
-div.acercademi{
-    width: 100%;
-    /* height: 500px; */
-    /* background-color: #502E26; */
-    background-color: rgba(70,72,84,0.6);
+div.susc a{
     color: #fff;
-    text-align: center;
+    text-decoration: none;
 }
-
-div.acercademi .quiensoy{
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-}
-div.acercademi .quiensoy h2{
-    font-size: 36px;
-}
-div.acercademi .quiensoy p.autor{
-    font-size: 22px;
-}
-div.acercademi .quiensoy .descripcion{
-    margin: 40px 0;
-    font-size: 18px;
-    font-weight: 600;
-}
-div.acercademi .quiensoy a.msmi{
-    display: inline-block;
-    width: 60%;
-    background-color: #ff4c4c;
-    padding: 10px;
-    margin: auto;
-    /* margin-bottom: 20px; */
-    color:#fff;
-    text-align: center;
-    border-radius: 3px;
-}
-
-/*Mis Videos*/
-div.enlace .videos{
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    text-align: center;
-    color: #fff;
-}
-div.enlace .videos h2{
-    font-size: 36px;
-}
-div.enlace .videos p{
-    font-size: 18px;
-}
-
-.mvideo{
-    width: 100%;
-    background-color: rgba(70,72,84,0.6);
-}
-
-.mvideo .cvideo {
-    width: 95%;
-    margin: auto;
-    background-color: rgba(255,255,255,0.7);
-
-}
-.mvideo .cvideo .videos-y{
-    width: 76%;
-    margin: auto;
-    padding-top: 40px;
-    /* margin-bottom: 20px; */
-}
-.mvideo .cvideo .videos-y iframe{
-    width: 100%;
-    height: 150px;
-    border-radius: 5px;
-    border: 3px solid #fff;
-
-}
-/*Contacto*/
-div.contacto{
-    width: 100%;
-    height: 91px;
-    background-color: rgba(70,72,84,1);
-    text-align: center;
-    
-}
-div.contacto h2{
-    color: #fff;
-    text-align: center;
-    vertical-align: middles;
-    padding: 21px;
-    font-size: 36px;
-}
-div.mcontacto{
-    text-align: center;
-    color: #fff;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: rgba(70,72,84,0.6);
-}
-div.mcontacto h2{
-    font-size: 36px;
-}
-div.mcontacto .img{
-    width: 33%;
-    margin: auto;
-    padding: 30px 0 10px 0;
-
-}
-div.mcontacto img{
-    width: 100%;
-}
-/*footer*/
 footer{
-    background-color: #ff4c4c;
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    /* margin-top: 60px; */
+    width: 100%;
+    background-color: #000000;
 }
-@media only screen and (min-width:600px){
-    body{
-        display: none;
-    }
-} 
+footer h5 {
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: 100;
+}
